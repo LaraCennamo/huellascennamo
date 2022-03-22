@@ -1,0 +1,434 @@
+*{padding: 0%; margin: 0%; box-sizing: border-box;}
+
+/* Header - Nav */
+
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+.huellas {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    padding-top: 1rem;
+}
+
+nav{
+    font-size: 0.7rem;
+}
+
+
+.link-modificado {
+    color: rgb(255, 255, 255);
+}
+
+.link-modificado:hover{
+    color: rgb(15, 133, 141);
+}
+
+.horizontal{ display: none;}
+
+
+/* Información index */
+
+.informacion {
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.informacion__titulo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+    color: rgb(15, 133, 141);
+    margin-top: 3rem;
+}
+
+.informacion__texto {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Productos index */
+
+.productos__bloque1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.productos__bloque-elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.productos__bloque-elemento:hover{
+    border: 0.1rem;
+    border-style:groove;
+    border-color: rgb(15, 133, 141);
+    background-color: rgb(220, 238, 240);
+}
+
+.productos p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 4rem 0 5rem 0;
+}
+
+.productos__boton {
+    text-decoration: none;    
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    border: 0.1rem;
+    border-style:groove;
+    border-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.productos__boton:hover {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+/* About */
+
+.texto {
+    margin: 4rem 1rem 4rem 1rem ;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+.texto p {
+    padding-bottom: 2rem;
+    line-height: 1.7rem;
+}
+
+
+/* Página Productos */
+
+.productos__titulo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgb(0, 108, 116);
+    text-align: center;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.productos_pagindividual p {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 1rem;
+}
+
+.productos__bloque-elemento1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    transition: all 1s;
+}
+
+.productos__bloque-elemento1:hover{
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02) ;
+
+    border: 0.1rem;
+    border-style:groove;
+    border-color: rgb(15, 133, 141);
+    background-color: rgb(220, 238, 240);
+    font-weight: 500;
+}
+
+.productos__bloque{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+
+.productos_pagindividual{
+    margin-bottom: 2rem;
+}
+
+
+
+/* Preguntas frecuentes */
+
+.informacion2{
+    text-align: justify;
+}
+
+.informacion2 h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgb(0, 108, 116);
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+.informacion__lista {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+
+}
+
+.informacion__lista-item {
+    padding-bottom: 1rem;
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+    border: 0.1rem;
+    border-top-style:groove;
+    border-color: rgb(0, 0, 0);
+    margin-bottom: 2rem;
+}
+
+
+/* Contacto */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario ul li {
+    list-style-type: none;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
+    color: #797979;
+    margin-bottom: 1rem;
+    border: 0.1rem;
+    border-style:groove;
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
+}
+
+.mensaje {
+    padding: 1rem 20rem 1rem 1rem;
+}
+
+.mensaje-contacto {
+    padding: 1rem 20rem 12rem 1rem;
+}
+
+.contacto { 
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 1rem
+}
+
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: #FFFFFF;
+    padding: 1.3rem 0 1.5rem 0;
+    justify-content: center;
+}
+
+.footer__huellas h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer__huellas p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8rem;
+    margin: 0 0 1rem 0;
+}
+
+.footer__info h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.footer__info ul li a {
+    list-style-type: decimal;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8rem;
+}
+
+.footer__redes h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.footer__redes div a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8rem;
+}
+
+.footer-section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer__redes-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.footer__redes-item img {
+    padding-right: 0.6rem;
+}
+
+/* -------------------------------- TABLET --------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+
+.vertical{
+    display: none;
+}
+
+.horizontal{ 
+    display: contents;
+} 
+
+.huellas{
+    font-size: 2.5rem;
+}
+
+nav{
+    font-size: 1rem;
+}
+
+.informacion__titulo { 
+    font-size: 2rem;
+}
+
+.informacion__texto { 
+    font-size: 1rem;
+    margin-bottom: 5rem;
+}
+
+/* About */
+
+.texto {
+     margin: 4rem 10rem 4rem 10rem ; 
+}
+
+
+/* Preguntas frecuentes*/
+
+.informacion__lista-item {
+    padding-bottom: 1rem;
+    text-align: justify;
+} 
+
+.imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 6rem 3rem 6rem;
+    padding-top: 2rem;
+    border: 0.1rem;
+    border-top-style:groove;
+    border-color: rgb(0, 0, 0);
+}
+
+/* Footer */
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 1rem;
+    margin-right: 10rem;
+
+}
+
+
+}
+
+
+/* -------------------------------- DESCKTOP -------------------------------------------- */
+
+@media screen and (min-width: 1200px){
+.horizontal{ 
+    display: contents;
+}
+
+.vertical{
+    display: none;
+}
+
+.informacion { 
+    margin: 0 8rem 0 8rem;
+}
+
+.informacion__texto{ 
+    font-size: 1.1rem;
+}
+
+/* About*/
+
+.texto {
+     margin: 8rem 15rem 8rem 15rem ; 
+}
+
+
+/* Preguntas frecuentes */
+
+.preguntas { 
+    margin: 0 15rem 0 10rem;
+}
+
+.informacion__lista-item {
+    padding-left: 4rem;
+}
+
+/* Contacto */
+
+.mensaje {
+    padding: 1rem 35rem 1rem 1rem;
+}
+
+.mensaje-contacto {
+    padding: 1rem 35rem 12rem 1rem;
+}
+
+
+}
+
