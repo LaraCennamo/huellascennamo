@@ -1,1 +1,81 @@
-footer{background-color: black;}
+@import "../base/mixin";
+
+footer{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 1.3rem 0 1.5rem 0;
+    justify-content: center;
+
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+
+    p{
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 0.8rem;
+        color: #b6b6b6;
+        margin: 0 0 1rem 0;
+    }
+
+    .footer__huellas{
+        padding-left: 2rem;
+    }
+
+    div {
+        ul{
+            li{
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    color: #b6b6b6;
+                    font-family: 'Noto Sans', sans-serif;
+                    font-size: 0.8rem;
+                    &:hover{color: rgb(15, 133, 141);}
+                }
+            }
+        }
+    }
+
+    .footer__redes{
+        display: flex;
+        padding-left: 2rem;
+        img{padding-right: 0.6rem;}
+
+    }
+
+
+
+    @media screen and (min-width: 768px) {
+        section {
+            @include alineacion(flex, row);
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        
+        }
+
+        .footer__huellas{
+            padding-left: 0rem;
+        }
+
+        ul{
+            @include alineacion(flex, row);
+            justify-content: space-evenly;
+            padding-bottom: 5rem;
+
+            li{
+                padding-left: 2rem;
+                padding-top: 0.8rem;
+            }
+        }
+
+        .links{
+            @include alineacion(flex, column);
+            align-items: flex-end;
+        }
+
+    }
+}

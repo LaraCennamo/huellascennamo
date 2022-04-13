@@ -1,0 +1,4 @@
+@mixin alineacion ($dsp, $fl) {
+    display: $dsp;
+    flex-direction: $fl;
+}
