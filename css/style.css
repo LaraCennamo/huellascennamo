@@ -1,3 +1,50 @@
-
+header {
+  background-color: #a8ccc3;
+}
+header .alinear {
+  display: none;
+}
+header h1 {
+  color: #646464;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 2.1rem;
+  padding-top: 0.5rem;
+  margin-bottom: 0;
+}
+header nav .links:hover {
+  color: aquamarine;
+}
+header nav .icono {
+  border-color: aliceblue;
+  color: aliceblue;
+}
+header .horizontal {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header .vertical {
+    display: none;
+  }
+  header .horizontal {
+    display: contents;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .alinear {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header .horizontal {
+    display: contents;
+  }
+  header .vertical {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+header{
+    
+    background-color: rgb(168, 204, 195);
+
+    .alinear{display: none;}
+
+    h1{
+        color: rgb(100, 100, 100);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 2.1rem;
+        padding-top: 0.5rem;
+        margin-bottom: 0;}
+    
+    nav{
+
+        .links{
+            &:hover{color: aquamarine;}}
+
+        .icono{
+            border-color: aliceblue;
+            color: aliceblue;}
+    
+    }
+
+    .horizontal{display: none;}
+
+
+    @media screen and (min-width: 768px) {
+
+        .vertical{
+            display: none;
+        }
+
+        .horizontal{
+            display: contents;
+        }
+         
+    } 
+
+    @media screen and (min-width: 1200px){
+        .alinear{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1{font-size: 2.5rem;}
+        
+
+        .horizontal{ 
+            display: contents;
+        }
+        
+        .vertical{
+            display: none;
+        }
+    }
+
+    
+
+}
