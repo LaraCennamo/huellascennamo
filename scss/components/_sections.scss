@@ -1,7 +1,7 @@
 @import "../base/extends";
 @import "../base/mixin";
 
-// INDEX
+// INDEX ---------------------------------------------------------
 
 .informacion{
 
@@ -88,3 +88,139 @@
     }
 }
 
+
+// ABOUT ---------------------------------------------------------
+
+.texto{
+    margin: 4rem 1rem 4rem 1rem ;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.1rem;
+    
+    p{
+        padding-bottom: 2rem;
+        line-height: 1.7rem;
+
+    }
+
+    @media screen and (min-width: 768px){
+        margin: 4rem 10rem 4rem 10rem ; 
+    }
+
+    @media screen and (min-width: 1200px){
+        margin: 6rem 12rem 0 12rem ; 
+    }
+}
+
+// PRODUCTS ---------------------------------------------------------
+
+.productos_pagindividual{
+    h2{
+        padding-bottom: 3rem;
+        @extend %titulo-principal;
+    }
+
+    p{
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .productos__bloque{
+        .productos__bloque-elemento1{
+            @include alineacion(flex, column);
+            align-items: center;
+            margin-bottom: 1.5rem;
+            transition: all 1s;
+
+        &:hover{
+            transform: scale(1.02);
+            -webkit-transform: scale(1.02);
+            -o-transform: scale(1.02) ;
+        
+            
+            border-style:groove;
+            background-color:rgb(220, 238, 240);
+            font-weight: 500;
+        }
+        }
+
+        @include alineacion(flex, row);
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+
+    margin-bottom: 2rem;
+}
+
+// CONTACT ---------------------------------------------------------
+
+.formulario{
+    @include alineacion(flex, column);
+    align-items: center;
+    ul{
+        li{
+            list-style-type: none;
+            font-family: 'Noto Sans', sans-serif;
+            text-align: justify;
+            color: #797979;
+            margin-bottom: 1rem;
+            border: 0.1rem;
+            border-style:groove;
+            border-radius: 2px;
+            border-color: rgb(0, 0, 0);
+        }
+    }
+
+    .mensaje{
+        padding: 1rem 20rem 1rem 1rem;
+    }
+
+    .mensaje-contacto{
+        padding: 1rem 20rem 12rem 1rem;
+    }
+
+    @media screen and (min-width: 1200px){
+        .mensaje {
+            padding: 1rem 35rem 1rem 1rem;
+        }
+        
+        .mensaje-contacto {
+            padding: 1rem 35rem 12rem 1rem;
+        }
+    }
+
+}
+
+.informacion2{
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    h2{ font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.7rem;
+        color: rgb(15, 133, 141);
+        margin-top: 3rem;}
+
+    p{  font-family: 'Noto Sans', sans-serif;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+}
+}
+
+.boton{
+    @include alineacion(flex, row);
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem 0 2rem 0;
+    
+    a{  
+        text-decoration: none;    
+        font-family: 'Roboto', sans-serif;
+        color: rgb(0, 0, 0);
+        border: 0.1rem groove black;
+        border-radius: 1px;
+        padding: 0.5rem;
+        &:hover{background-color: black;
+            color: white;}
+    }
+}

@@ -47,7 +47,7 @@ header .horizontal {
   }
 }
 
-.informacion div h2 {
+.productos_pagindividual h2, .informacion div h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 300;
@@ -129,6 +129,127 @@ header .horizontal {
   color: white;
 }
 
+.texto {
+  margin: 4rem 1rem 4rem 1rem;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.1rem;
+}
+.texto p {
+  padding-bottom: 2rem;
+  line-height: 1.7rem;
+}
+@media screen and (min-width: 768px) {
+  .texto {
+    margin: 4rem 10rem 4rem 10rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .texto {
+    margin: 6rem 12rem 0 12rem;
+  }
+}
+
+.productos_pagindividual {
+  margin-bottom: 2rem;
+}
+.productos_pagindividual h2 {
+  padding-bottom: 3rem;
+}
+.productos_pagindividual p {
+  font-family: "Noto Sans", sans-serif;
+}
+.productos_pagindividual .productos__bloque {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.productos_pagindividual .productos__bloque .productos__bloque-elemento1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  transition: all 1s;
+}
+.productos_pagindividual .productos__bloque .productos__bloque-elemento1:hover {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  border-style: groove;
+  background-color: #dceef0;
+  font-weight: 500;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario ul li {
+  list-style-type: none;
+  font-family: "Noto Sans", sans-serif;
+  text-align: justify;
+  color: #797979;
+  margin-bottom: 1rem;
+  border: 0.1rem;
+  border-style: groove;
+  border-radius: 2px;
+  border-color: black;
+}
+.formulario .mensaje {
+  padding: 1rem 20rem 1rem 1rem;
+}
+.formulario .mensaje-contacto {
+  padding: 1rem 20rem 12rem 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .formulario .mensaje {
+    padding: 1rem 35rem 1rem 1rem;
+  }
+  .formulario .mensaje-contacto {
+    padding: 1rem 35rem 12rem 1rem;
+  }
+}
+
+.informacion2 {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.informacion2 h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #0f858d;
+  margin-top: 3rem;
+}
+.informacion2 p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin: 1rem 0 2rem 0;
+}
+.boton a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  border: 0.1rem groove black;
+  border-radius: 1px;
+  padding: 0.5rem;
+}
+.boton a:hover {
+  background-color: black;
+  color: white;
+}
+
 footer {
   background-color: black;
   color: white;
@@ -196,7 +317,7 @@ footer .footer__redes img {
   }
 }
 
-.informacion div h2 {
+.informacion div h2, .productos_pagindividual h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 300;
