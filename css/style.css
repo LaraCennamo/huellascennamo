@@ -10,7 +10,6 @@ header h1 {
   font-weight: 400;
   font-size: 2.1rem;
   padding-top: 0.5rem;
-  margin-bottom: 0;
 }
 header nav .links:hover {
   color: aquamarine;
@@ -47,7 +46,7 @@ header .horizontal {
   }
 }
 
-.productos_pagindividual h2, .informacion div h2 {
+.preguntas h2, .productos_pagindividual h2, .informacion div h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 300;
@@ -178,6 +177,67 @@ header .horizontal {
   border-style: groove;
   background-color: #dceef0;
   font-weight: 500;
+}
+
+.preguntas h2 {
+  padding-bottom: 1rem;
+}
+.preguntas h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #0f858d;
+  text-align: center;
+  margin-top: 2rem;
+}
+.preguntas ul {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  text-align: left;
+  padding-top: 1.5rem;
+}
+.preguntas ul li {
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .preguntas ul li {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .preguntas ul li {
+    padding-left: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .preguntas {
+    margin: 0 15rem 0 10rem;
+  }
+}
+
+.mas-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.mas-sobre .imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .mas-sobre .imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 6rem 3rem 6rem;
+    padding-top: 1rem;
+  }
 }
 
 .formulario {
@@ -317,7 +377,7 @@ footer .footer__redes img {
   }
 }
 
-.informacion div h2, .productos_pagindividual h2 {
+.informacion div h2, .productos_pagindividual h2, .preguntas h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 300;

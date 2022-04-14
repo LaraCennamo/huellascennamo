@@ -150,6 +150,81 @@
     margin-bottom: 2rem;
 }
 
+// QUESTIONS -------------------------------------------------------
+
+.preguntas{
+    h2{
+        padding-bottom: 1rem;
+        @extend %titulo-principal;
+    }
+
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.7rem;
+        color: rgb(15, 133, 141);
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    ul{
+        list-style-type: none;
+        text-decoration: none;
+        font-family: 'Noto Sans', sans-serif;
+        text-align: left;
+        padding-top: 1.5rem;
+  
+        
+        li{
+            padding-bottom: 1rem;
+
+            @media screen and (min-width: 768px){
+                padding-bottom: 1rem;
+                font-size: 1.1rem;
+                text-align: left;
+            }
+
+            @media screen and (min-width: 1200px){
+                padding-left: 4rem;
+            }
+
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+        margin: 0 15rem 0 10rem;
+    }
+
+}
+
+.mas-sobre{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 2rem;
+        margin-bottom: 2rem; 
+        
+    }
+
+    @media screen and (min-width: 768px){
+
+        .imagenes{
+            @include alineacion(flex, row);
+            justify-content: space-evenly;
+            margin: 0 6rem 3rem 6rem;
+            padding-top: 1rem; 
+        }
+
+    }
+}
+
+
 // CONTACT ---------------------------------------------------------
 
 .formulario{
